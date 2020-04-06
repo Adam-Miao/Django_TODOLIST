@@ -4,16 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Todo List</title>
-    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+    <style type="text/css">
+        .brand-icon{
+            width: 30px;
+            height:33px;
+        }
+        .brand-anchor{
+            font-size:25px;
+            color:#cfcecf;
+            text-decoration:none;
+        }
+        .brand-div{
+            background-color:#939594;
+        }
+    </style>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js" />
     {% bootstrap_css %}
     {% bootstrap_javascript %}
 </head>
 <body>
     <div class="navbar navbar-default navbar-static-top">
-        <div class="navbar-header">
-            <img src="/static/images/Brand.png" alt="TODO List" />
-            <a href="/">TODO List</a>
-            </div>
+        <div class="navbar-header brand-div container">
+            <a href="/" class="brand-anchor"><img class="brand-icon" src="https://ae01.alicdn.com/kf/Hd07b6338c1944e45a0dfb36f897a2a3di.png" alt="TODO List" /></a>
+            <a href='/' class="brand-anchor">TODO List</a>
+        </div>
     </div>
     {% block content %}{% endblock content %}
 </body>
