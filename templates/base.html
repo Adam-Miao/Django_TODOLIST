@@ -1,11 +1,17 @@
+{% load bootstrap3 %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Todo List</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
 </head>
 <body>
-    <a href="/" style="color: #000000;">TODO List</a>
+    <div class="navbar navbar-default navbar-static-top">
+
+    </div>
     {% block content %}{% endblock content %}
 </body>
 </html>
